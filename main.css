@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Fira sans', sans-serif;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the content horizontally */
+    justify-content: center; /* Center the content vertically */
+    min-height: 100vh;
+    background: var(--dark);
+    color: #310af4;
+  }
+  
+  header {
+    padding: 2rem 1rem;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  header h1 {
+    font-size: 2.5rem;
+    font-weight: 300;
+    color: rgb(105, 157, 247);
+    margin-bottom: 1rem;
+    border-radius: 0.5px;
+  }
+  
+  #new-task-form {
+    display: flex;
+    margin-bottom: 1rem;
+  }
+  
+  button {
+    appearance: flex;
+    border-radius: 1rem;
+    background-color: #fefefe;
+  }
+  
+  input
+  {
+    margin-left: 0.5px;
+  }
+  #new-task-input {
+    flex: 1 1 0%;
+    background-color: var(--darker);
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-right: 1rem;
+    border: 2px solid #3b13ed; /* Add border */
+  }
+  
+  .tasklist {
+    max-width: 150%;
+    width: 100%;
+    padding-left: 0px;
+    margin-left: 0px; /* Set the width to 100% */
+  }
+  
+  .task {
+    border: 1px solid #511ac0;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffffff;
+    width: 100%; /* Make tasks take the full width */
+    max-width: 100%; 
+    max-height:50%/* Set the maximum width to 100% */
+  }
+  
+  .text {
+    color: rgb(9, 0, 0); /* Set task text color to white */
+  }
+  
+  .actions {
+    display: flex;
+  }
+  
+  .edit,
+  .delete {
+    margin-left: 0.5rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid white; /* Add border */
+  }
+  
+  .edit {
+    background-color: rgb(3, 196, 90);
+    color: white;
+  }
+  
+  .delete {
+    background-color: rgb(75, 140, 243);
+    color: white;
+  }
+  
